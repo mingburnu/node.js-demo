@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+  div#content
+    h1 修改使用者
+   
+    form#userform(method="POST" action="/#{user.name}")
+      div 
+        label(for="name") 姓名:
+        input#name(type="text" name="name" value="#{user.name}")
+      div 
+        label(for="email") 電子郵件:
+        input#email(type="email" name="email" value="#{user.email}")
+      div 
+        label(for="age") 年紀:
+        input#age(type="number" name="age" value="#{user.age}")
+      div
+        button(type="submit") 修改
+        input(type="hidden", name="_method", value="PUT")

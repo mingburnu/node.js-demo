@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: -moz-calc(100% - 20px);
+  height: -webkit-calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+section#chatroom {
+  height: -moz-calc(100% - 80px);
+  height: -webkit-calc(100% - 80px);
+  height: calc(100% - 80px);
+  background-color: #EFFFEC;
+}
+div#messages {
+  height: -moz-calc(100% - 35px);
+  height: -webkit-calc(100% - 35px);
+  height: calc(100% - 35px);
+  padding: 10px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+input#message {
+  width: -moz-calc(100% - 80px);
+  width: -webkit-calc(100% - 80px);
+  width: calc(100% - 80px);
+}
+
+header{
+  background-color:#4192C1;
+  text-align: right;
+  margin-top: 15px;
+}
+header h1{
+  padding: 5px;
+  padding-right: 15px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+footer{
+  padding: 6px;
+  background-color:#4192C1;
+  color: #FFFFFF;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  text-align:center;
+}
+footer a{
+  color:purple;
+}
+a {
+  color: #00B7FF;
+}
+
+div#content{
+  margin:0 auto;
+  width:500px;
+}
+#table1{
+  width:400px;
+  border:1px solid green;
+  border-collapse:collapse;
+}
+
+#table1 th,#table1 td{
+  border:1px solid green;
+  padding:4px;
+}
+/*form*/
+#userform div
+    {
+        width: 300px;
+        border-bottom: 1px solid #d2dadd;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+    }
+#userform div:nth-child(4)
+    {
+         text-align: center;
+    }
+#userform label
+    {
+        width: 70px;
+        float: left;
+        text-align: right;
+        padding-right: 10px;
+    }

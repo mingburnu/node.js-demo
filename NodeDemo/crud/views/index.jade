@@ -1,0 +1,25 @@
+﻿extends layout
+
+block content
+  div#content
+    h1 所有使用者 
+
+    a(href="/new") 新增
+    table(id="table1")
+      thead
+        tr
+          th 姓名
+          th 年紀
+          th 電子郵件
+          th 編輯
+          th 刪除
+      tbody
+        each user in users
+          tr
+            td #{user.name}
+            td #{user.age}
+            td #{user.email}
+            td
+              a(href="/edit/#{user.name}") 編輯
+            td
+              a(href="/delete/#{user.name}") 刪除

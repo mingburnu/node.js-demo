@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+  div#content
+    h1 新增使用者
+    
+    form#userform(method="post" action="/new")
+      div 
+        label(for="name") 姓名:
+        input#name(type="text" name="name")
+      div 
+        label(for="email") 電子郵件:
+        input#email(type="email" name="email")
+      div 
+        label(for="age") 年紀:
+        input#age(type="number" name="age")
+      div: button(type="submit") 新增
+
+

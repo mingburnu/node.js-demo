@@ -1,0 +1,21 @@
+﻿extends layout
+
+block content
+  h1= basic.title
+  p Welcome to #{basic.title}
+  h2 #{basic.name} 您好 
+  h3 "#{book.name}" for #{book.price}
+  a(href="http://tw.yahoo.com", target="_blank") YAHOO
+  if basic.name == "Jack"
+    h1 Hello Jack
+  else
+    h1 My name is #{basic.name}
+   
+  select
+    each item, i in items
+      option(value=i) #{item}
+  ul
+    for item in items
+      li= item
+    else
+      li sorry, no items!
